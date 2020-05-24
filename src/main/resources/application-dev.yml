@@ -1,6 +1,6 @@
 authcodegeneration:
   jwt:
-    issuer: "http://172.18.50.35:8080/auth/realms/realm-covid-code"
+    issuer: "http://172.18.50.35:8080/auth/realms/cv-covid-code"
     token-validity: 300000
     privateKey: "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCLQq2aWFPVoAo0
 ZSJHSX9URdXeK3trsT6mjHoCMBu7OsbMUN3IvOw3qH2GJgGsx5NoKQqMRT+cbcil
@@ -34,17 +34,17 @@ iscsAhUHIJoEG4Ss/RsCc7QHwMarTv5Kuc6Igk/fanPOZHZytEtw0PM4L8PIHmzY
       password: "todo"
   service:
     keycloak:
-      realm: "realm-covid-code"
+      realm: "cv-covid-code"
       uri: "http://172.18.50.35:8080"
       masterPassword: "Pa55w0rd"
-      clientSecret: "cd942d86-0ad7-4164-adf8-366ef73b420f"
+      clientSecret: "8862e4a1-5f3f-4b93-9770-885d21a19893"
 
 jeap:
   security:
     oauth2:
       resourceserver:
         authorization-server:
-          issuer: "http://172.18.50.35:8080/auth/realms/realm-covid-code"
+          issuer: "http://172.18.50.35:8080/auth/realms/cv-covid-code"
 
 ha-authcode-generation-service:
   allowed-origin: "http://172.18.50.35:4200"

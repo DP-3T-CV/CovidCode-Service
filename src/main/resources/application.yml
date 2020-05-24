@@ -56,7 +56,7 @@ spring:
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: org.postgresql.Driver
-        url: jdbc:postgresql://localhost:3113/haauthcodegeneration
+        url: jdbc:postgresql://dbauthcodegeneration:5432/haauthcodegeneration
         username: haauthcodegeneration
         password: secret
         hikari:

@@ -38,7 +38,7 @@ public class DefaultKeycloakAdminService implements KeycloakAdminService {
     private static final String CLIENT_SECRET = "client_secret";
     private static final String ADMIN_CLI = "admin-cli";
     private static final String TEMPORARY_NAME_JWT = "temporary_name_jwt";
-    private static final String KEYCLOAK_USERNAME = "keycloak";
+    private static final String KEYCLOAK_USERNAME = "admin";
     private static final String PTA_APP_BACKEND = "pta-app-backend";
     private static final String USERS = "users";
     private static final String ADMIN = "admin";

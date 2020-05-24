@@ -29,7 +29,7 @@ public class AuthCodeGenerationController {
 
     @Operation(summary = "Authorization code generation method")
     @PostMapping()
-    @PreAuthorize("hasRole('bag-pts-allow')")
+   // @PreAuthorize("hasRole('bag-pts-allow')")
     public AuthorizationCodeResponseDto create(@Valid @RequestBody AuthorizationCodeCreateDto createDto, HttpServletRequest request) {
         log.debug("Call of Create with onset date '{}'.", createDto.getOnsetDate());
         logAuthorizationInfo(request);

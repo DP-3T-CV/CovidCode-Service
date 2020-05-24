@@ -31,7 +31,7 @@ iscsAhUHIJoEG4Ss/RsCc7QHwMarTv5Kuc6Igk/fanPOZHZytEtw0PM4L8PIHmzY
   monitor:
     prometheus:
       user: "prometheus"
-      password: ${vcap.services.ha_prometheus_dev.credentials.password}
+      password: "todo"
   service:
     keycloak:
       realm: "realm-covid-code"

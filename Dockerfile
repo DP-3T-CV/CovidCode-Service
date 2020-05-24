@@ -13,4 +13,4 @@ ADD src /code/src
 RUN ["mvn", "package"]
 RUN ls -a target
 EXPOSE 8113
-CMD ["java","-jar","target/ha-authcode-generation-service.jar"]
+CMD ["java","-Dspring.profiles.active=dev","-jar","target/ha-authcode-generation-service.jar"]

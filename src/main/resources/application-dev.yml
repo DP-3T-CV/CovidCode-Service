@@ -10,7 +10,7 @@ authcodegeneration:
   service:
     keycloak:
       realm: "cv-covid-code"
-      uri: "http://172.18.50.38:8080/auth/"
+      uri: "http://172.18.50.45:8080/auth/"
       masterPassword: "Pa55w0rd"
       clientSecret: "fc4a5716-a097-47ad-b58f-6184cd1e0ffa"
 

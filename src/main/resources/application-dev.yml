@@ -35,7 +35,7 @@ iscsAhUHIJoEG4Ss/RsCc7QHwMarTv5Kuc6Igk/fanPOZHZytEtw0PM4L8PIHmzY
   service:
     keycloak:
       realm: "cv-covid-code"
-      uri: "http://172.18.50.35:8080"
+      uri: "http://172.18.50.35:8080/auth"
       masterPassword: "Passs0rd"
       clientSecret: "8862e4a1-5f3f-4b93-9770-885d21a19893"
 

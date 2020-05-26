@@ -1,33 +1,8 @@
 authcodegeneration:
   jwt:
-    issuer: "http://172.18.50.35:8080/auth/realms/cv-covid-code"
+    issuer: "http://172.18.50.36:8080/auth/realms/cv-covid-code"
     token-validity: 300000
-    privateKey: "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCLQq2aWFPVoAo0
-ZSJHSX9URdXeK3trsT6mjHoCMBu7OsbMUN3IvOw3qH2GJgGsx5NoKQqMRT+cbcil
-VfPMp2K0nGkzWb0bVLbvyCVezZryv3ELACqmAuFYx2NRGb3qykpOLN7KrZJ2tfYz
-yF8O3BWMbxnMM4QyYZ1wfLX6gceMaJa+jHp7eOpN0zZSj6Zmt6EzkwCITEO9suc/
-iPIRck2b0fFetWG1CSPrLQDRnRChGdGRRdzCPj4tZ/CBUaMIAya68v9dSKuekAfQ
-yqk2Dtro6+6rFMSywovUS8PwaHqZSSiGlimu55xjMdLuJid0dgUCDFVzhS2/0mnk
-2JNPqxsDAgMBAAECggEAF4XVySJuVsFHt/31QlFZ3qRFMdfqaxBvYraLzV7O8FtH
-RS/LpqKyy9v8B/LXiZXUgl2cWIFB82xf3f2cxs7nT1a0NmZMGRfAJtSJ62+TYrmP
-oKoQiiYmZlaXohVVDRnKX1YY8+dJvB+UTL7lv57RTP1fQCzbgZ8Xdu651myhhkfK
-kk9MyXDcExJ4fcDEVV+n89vbySC2r+8yI941EESuoAVjbu7//RBvLJ8aSeVMnkdL
-FksK0IhTVqOMbJUOxP5CUqmygPqrh27u/YLlZinIqR6Qy1iHQpGtmz9KAvfSZz+q
-Hn1kevp99oLyDqSdldomlgyNlPbG06wJPjA00/yXkQKBgQDyj0B6rwWVpM4DRjha
-nOdAp7jrGvwFLgULROfq+SQgedgHOzfOhsbfInWOgLqGnsnSWGIs7tWv4dzXYmqA
-d9xm/xv+ChlMjmO4fTS3xUWQgRnW10yQ/KpmHrx93MMojCUBSA0ZuMPxs/wtGdUu
-W096oSLFj1u6gII/vxIPcq2BNwKBgQCS+hxtfTsCDqrtY4qh/0fQKVdi3/VdfP8T
-FfSU+38ujNy+JXgkaGMCS/iMDgPrp6mNxxvPYQDFc0x+6prV7H23hqaNop4J3b+n
-+slCxZVguVVDZdvYP1iSMWZEINTJ6NUf7tsiuxmzcuxfcdUDxX0FH9tfG4QnSub3
-6eSZ39NKlQKBgQC8yydC1mugWBBJmCRQ0wNj3agexngWiAVBCjcBOz4VUQEGT99W
-Dq1IDAg4DJYiJgGsiUKQ+qy0IzbDJkUDDUgtmq7tAmtCnSmc9UdNKmzE1teH0zgz
-OZZfudi4llYIf1xmLPCVbqyEurSzXgIB/OxV5Imt/7FD7rZya4PhJj9J7QKBgQCS
-vvoHL5Ps9+wdXNeb6yAubDh91hJLp3OeALvUzE4tkiMMDqkn4LmKH4Qngg7UCPC3
-R+cyZS259uaXiXHSyW60ANLmc0jLnQWwmCq+ajw8+I5y3o5kGMs8G+p5dzY96iRw
-37EXuittCf+LREJko5exuB71lKmb+aMmP/co01tJCQKBgQCzh7wsOQH8PyiwfkUr
-iscsAhUHIJoEG4Ss/RsCc7QHwMarTv5Kuc6Igk/fanPOZHZytEtw0PM4L8PIHmzY
-63oyfKKxc3jCY1XOfOetP/oyUGkTqkVGWggXkBuxua8LlS+jW9rdloETTmBpmsAY
-1YfkaClCqWK2Yncoh4c7xsAl4w=="
+    privateKey: ""
   monitor:
     prometheus:
       user: "prometheus"

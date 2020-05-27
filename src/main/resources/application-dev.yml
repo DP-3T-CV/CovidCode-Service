@@ -1,6 +1,6 @@
 authcodegeneration:
   jwt:
-    issuer: "http://172.18.50.36:8080/auth/realms/cv-covid-code"
+    issuer: "http://172.18.50.36:8080/auth/realms/CovidCode-Service"
     token-validity: 300000
     privateKey: ""
   monitor:
@@ -19,7 +19,7 @@ jeap:
     oauth2:
       resourceserver:
         authorization-server:
-          issuer: "http://172.18.50.35:8080/auth/realms/cv-covid-code"
+          issuer: "http://172.18.50.35:8080/auth/realms/CovidCode-Service"
 
 ha-authcode-generation-service:
   allowed-origin: "http://172.18.50.35:4200"

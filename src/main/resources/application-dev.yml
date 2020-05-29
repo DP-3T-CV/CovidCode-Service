@@ -1,6 +1,6 @@
 authcodegeneration:
   jwt:
-    issuer: "http://172.18.50.35:8080/auth/realms/cv-covid-code"
+    issuer: "http://keycloak.uniteltmais.cv/auth/realms/cv-covid-code"
     token-validity: 300000
     privateKey: "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCLQq2aWFPVoAo0
 ZSJHSX9URdXeK3trsT6mjHoCMBu7OsbMUN3IvOw3qH2GJgGsx5NoKQqMRT+cbcil
@@ -32,19 +32,13 @@ iscsAhUHIJoEG4Ss/RsCc7QHwMarTv5Kuc6Igk/fanPOZHZytEtw0PM4L8PIHmzY
     prometheus:
       user: "prometheus"
       password: "todo"
-  service:
-    keycloak:
-      realm: "cv-covid-code"
-      uri: "http://172.18.50.35:8080/auth/"
-      masterPassword: "Passs0rd"
-      clientSecret: "73632134-4c52-42ef-b781-7832782e3ac8"
 
 jeap:
   security:
     oauth2:
       resourceserver:
         authorization-server:
-          issuer: "http://172.18.50.35:8080/auth/realms/cv-covid-code"
+          issuer: "http://keycloak.uniteltmais.cv/auth/realms/cv-covid-code"
 
 ha-authcode-generation-service:
-  allowed-origin: "http://172.18.50.35:4200"
+  allowed-origin: "http://covidcodeui.uniteltmais.cv"

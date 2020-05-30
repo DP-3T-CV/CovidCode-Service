@@ -14,7 +14,6 @@ jeap:
       resourceserver:
         authorization-server:
           issuer: "http://keycloak.uniteltmais.cv/auth/realms/cv-covid-code"
-          jwk-set-uri: "http://keycloak.uniteltmais.cv/.well-known/jwks.json"
 
 ha-authcode-generation-service:
   allowed-origin: "http://covidcodeui.uniteltmais.cv"

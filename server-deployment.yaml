@@ -25,7 +25,7 @@ spec:
         name: covid-code-service
         ports:
         - containerPort: 8113
-          name: covid-code-service
+          name: 8113tcp01
           protocol: TCP
       imagePullSecrets:
       - name: nanosmon

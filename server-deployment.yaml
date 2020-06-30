@@ -2,27 +2,33 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: covid-code-service
-  namespace: codeservice
-  spec:
-  progressDeadlineSeconds: 600
+  namespace: covid-code-service
+spec:
   replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: deployment-codeservice-covid-code-service
+      app: covid-code-service
   strategy:
     rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 0
+      maxSurge: 25%
+      maxUnavailable: 25%
     type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: covid-code-service
     spec:
       containers:
-      - image: registry.nosi.cv/na_nos_mon/covidcodeservice:1
-        imagePullPolicy: Always
+      - image: "registry.nosi.cv/na_nos_mon/covidcodeservice:$BUILD_NUMBER"
+        imagePullPolicy: IfNotPresent
         name: covid-code-service
         ports:
         - containerPort: 8113
-          name: 8113tcp01
+          name: covid-code-service
           protocol: TCP
-
-
+      imagePullSecrets:
+      - name: nanosmon
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      terminationGracePeriodSeconds: 30

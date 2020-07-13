@@ -1,6 +1,6 @@
 authcodegeneration:
   jwt:
-    issuer: "http://keycloak.uniteltmais.cv/auth/realms/cv-covid-code"
+    issuer: "https://keycloak.nanosmon.cv/auth/realms/cv-covid-code"
     token-validity: 300000
     privateKey: "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCLQq2aWFPVoAo0ZSJHSX9URdXeK3trsT6mjHoCMBu7OsbMUN3IvOw3qH2GJgGsx5NoKQqMRT+cbcilVfPMp2K0nGkzWb0bVLbvyCVezZryv3ELACqmAuFYx2NRGb3qykpOLN7KrZJ2tfYzyF8O3BWMbxnMM4QyYZ1wfLX6gceMaJa+jHp7eOpN0zZSj6Zmt6EzkwCITEO9suc/iPIRck2b0fFetWG1CSPrLQDRnRChGdGRRdzCPj4tZ/CBUaMIAya68v9dSKuekAfQyqk2Dtro6+6rFMSywovUS8PwaHqZSSiGlimu55xjMdLuJid0dgUCDFVzhS2/0mnk2JNPqxsDAgMBAAECggEAF4XVySJuVsFHt/31QlFZ3qRFMdfqaxBvYraLzV7O8FtHRS/LpqKyy9v8B/LXiZXUgl2cWIFB82xf3f2cxs7nT1a0NmZMGRfAJtSJ62+TYrmPoKoQiiYmZlaXohVVDRnKX1YY8+dJvB+UTL7lv57RTP1fQCzbgZ8Xdu651myhhkfKkk9MyXDcExJ4fcDEVV+n89vbySC2r+8yI941EESuoAVjbu7//RBvLJ8aSeVMnkdLFksK0IhTVqOMbJUOxP5CUqmygPqrh27u/YLlZinIqR6Qy1iHQpGtmz9KAvfSZz+qHn1kevp99oLyDqSdldomlgyNlPbG06wJPjA00/yXkQKBgQDyj0B6rwWVpM4DRjhanOdAp7jrGvwFLgULROfq+SQgedgHOzfOhsbfInWOgLqGnsnSWGIs7tWv4dzXYmqAd9xm/xv+ChlMjmO4fTS3xUWQgRnW10yQ/KpmHrx93MMojCUBSA0ZuMPxs/wtGdUuW096oSLFj1u6gII/vxIPcq2BNwKBgQCS+hxtfTsCDqrtY4qh/0fQKVdi3/VdfP8TFfSU+38ujNy+JXgkaGMCS/iMDgPrp6mNxxvPYQDFc0x+6prV7H23hqaNop4J3b+n+slCxZVguVVDZdvYP1iSMWZEINTJ6NUf7tsiuxmzcuxfcdUDxX0FH9tfG4QnSub36eSZ39NKlQKBgQC8yydC1mugWBBJmCRQ0wNj3agexngWiAVBCjcBOz4VUQEGT99WDq1IDAg4DJYiJgGsiUKQ+qy0IzbDJkUDDUgtmq7tAmtCnSmc9UdNKmzE1teH0zgzOZZfudi4llYIf1xmLPCVbqyEurSzXgIB/OxV5Imt/7FD7rZya4PhJj9J7QKBgQCSvvoHL5Ps9+wdXNeb6yAubDh91hJLp3OeALvUzE4tkiMMDqkn4LmKH4Qngg7UCPC3R+cyZS259uaXiXHSyW60ANLmc0jLnQWwmCq+ajw8+I5y3o5kGMs8G+p5dzY96iRw37EXuittCf+LREJko5exuB71lKmb+aMmP/co01tJCQKBgQCzh7wsOQH8PyiwfkUriscsAhUHIJoEG4Ss/RsCc7QHwMarTv5Kuc6Igk/fanPOZHZytEtw0PM4L8PIHmzY63oyfKKxc3jCY1XOfOetP/oyUGkTqkVGWggXkBuxua8LlS+jW9rdloETTmBpmsAY1YfkaClCqWK2Yncoh4c7xsAl4w=="
   monitor:
@@ -13,7 +13,7 @@ jeap:
     oauth2:
       resourceserver:
         authorization-server:
-          issuer: "http://keycloak.uniteltmais.cv/auth/realms/cv-covid-code"
+          issuer: "https://keycloak.nanosmon.cv/auth/realms/cv-covid-code"
 
 ha-authcode-generation-service:
-  allowed-origin: "http://covidcodeui.uniteltmais.cv"
+  allowed-origin: "https://covidcodeui.nanosmon.cv"

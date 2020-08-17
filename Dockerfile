@@ -12,7 +12,8 @@ ADD pom.xml /code/pom.xml
 ADD src /code/src
 #RUN ["mvn", "clean", "compile"]
  
-RUN ["mvn", "package"]
+#RUN ["mvn", "package"]
+RUN ["mvn compile exec:java"]
 RUN ls -a target
 EXPOSE 8113
 CMD ["java","-Dspring.profiles.active=dev","-jar","target/ha-authcode-generation-service.jar"]

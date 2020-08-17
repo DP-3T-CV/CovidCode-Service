@@ -16,4 +16,4 @@ jeap:
           issuer: "http://keycloak.uniteltmais.cv/auth/realms/cv-covid-code"
 
 ha-authcode-generation-service:
-  allowed-origin: "http://covidcodeui.uniteltmais.cv"
+  allowed-origin: "http://covidcodeui.nanosmon.cv/"

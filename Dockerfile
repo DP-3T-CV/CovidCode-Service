@@ -10,8 +10,8 @@ ADD pom.xml /code/pom.xml
 
 # Adding source, compile and package into a fat jar
 ADD src /code/src
-RUN ["mvn", "clean", "compile"]
- 
+#RUN ["mvn", "clean", "compile"]
+RUN ["mvn", "compile","exec:java"]
 #RUN ["mvn", "package"]
 RUN ls -a target
 EXPOSE 8113

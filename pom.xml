@@ -279,6 +279,7 @@
 					</execution>
 				</executions>
 				<configuration>
+					<failOnNoGitDirectory>false</failOnNoGitDirectory>
 					<injectAllReactorProjects>true</injectAllReactorProjects>
 					<runOnlyOnce>true</runOnlyOnce>
 					<skipPoms>false</skipPoms>

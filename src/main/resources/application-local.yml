@@ -1,7 +1,3 @@
-spring:
-  flyway:
-    locations: classpath:db/migration/common
-
 authcodegeneration:
   jwt:
     issuer: "http://keycloak.nanosmon.cv/auth/realms/cv-covid-code"

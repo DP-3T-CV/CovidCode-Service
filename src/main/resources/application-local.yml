@@ -11,12 +11,6 @@ authcodegeneration:
     prometheus:
       user: "prometheus"
       password: "{noop}secret"
-  service:
-    keycloak:
-      realm: "bag-pts"
-      uri: http://localhost
-      masterPassword: secret
-      clientSecret: secret
 
 jeap:
   security:
@@ -28,3 +22,25 @@ jeap:
 
 ha-authcode-generation-service:
   allowed-origin: "http://localhost:4200"
+
+## Uncomment the following to increase logging; then issue
+## `mvn compile` to copy this configuration under target/
+# server:
+#   tomcat:
+#     basedir: /tmp
+#     accesslog:
+#       enabled: true
+#       directory: /dev
+#       prefix: stdout
+#       buffered: false
+#       suffix:
+#       file-date-format:
+#
+# logging:
+#   level:
+#     org.apache.tomcat: DEBUG
+#     org.apache.catalina: DEBUG
+#     org:
+#       apache:
+#         tomcat: DEBUG
+#         catalina: DEBUG

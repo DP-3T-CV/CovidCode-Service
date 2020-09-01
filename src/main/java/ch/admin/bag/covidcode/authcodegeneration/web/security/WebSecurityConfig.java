@@ -22,7 +22,7 @@ import java.util.List;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Value("${ha-authcode-generation-service.allowed-origin}")
+    @Value("${ha-authcode-generation-service.allowed-origin:http://covidcodeui.nanosmon.cv}")
     private String allowedOrigin;
 
 

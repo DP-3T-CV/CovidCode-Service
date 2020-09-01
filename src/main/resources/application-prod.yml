@@ -25,4 +25,4 @@ jeap:
           issuer: "http://keycloak.nanosmon.cv/auth/realms/cv-covid-code"
 
 ha-authcode-generation-service:
-  allowed-origin: "http://covidcodeui.nanosmon.cv/"
+  allowed-origin: "http://covidcodeui.nanosmon.cv"
